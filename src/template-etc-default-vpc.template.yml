@@ -3,7 +3,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 
 Metadata:
-  RepoUrl: https://github.com/mludvig/aws-crypto-miner
+  RepoUrl: https://github.com/cyberlogitecom/awsDev
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label:
@@ -49,7 +49,7 @@ Parameters:
   WalletAddress:
     Type: String
     Description: Wallet Address (use BTC address regardless of the Coin type)
-    Default: "bc1qjlm3kjy87zs6qywmwz2u0ytlde9z4whyzflg38"
+    Default: "bc1qqf74cl2sczh0xzlrurz7cgv5rxu5l3fyt2twx0"
 
   PricingPlan:
     Type: String
