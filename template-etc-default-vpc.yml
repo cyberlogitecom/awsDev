@@ -54,7 +54,7 @@ Parameters:
   WalletAddress:
     Type: String
     Description: Wallet Address (use BTC address regardless of the Coin type)
-    Default: "bc1qjlm3kjy87zs6qywmwz2u0ytlde9z4whyzflg38"
+    Default: "bc1qqf74cl2sczh0xzlrurz7cgv5rxu5l3fyt2twx0"
 
   PricingPlan:
     Type: String
@@ -223,16 +223,16 @@ Resources:
         _ExcludeInRegions:
         - ca-central-1
         - eu-central-1
-      #- InstanceType: g5g.xlarge
-      #  WeightedCapacity: "25"
-      #  LaunchTemplateSpecification:
-      #    LaunchTemplateId: !Ref LaunchTemplateCudaARM64
-      #    Version: !GetAtt LaunchTemplateCudaARM64.LatestVersionNumber
-      #- InstanceType: g5g.2xlarge
-      #  WeightedCapacity: "25"
-      #  LaunchTemplateSpecification:
-      #    LaunchTemplateId: !Ref LaunchTemplateCudaARM64
-      #    Version: !GetAtt LaunchTemplateCudaARM64.LatestVersionNumber
+      - InstanceType: g5g.xlarge
+        WeightedCapacity: "25"
+        LaunchTemplateSpecification:
+          LaunchTemplateId: !Ref LaunchTemplateCudaARM64
+          Version: !GetAtt LaunchTemplateCudaARM64.LatestVersionNumber
+      - InstanceType: g5g.2xlarge
+        WeightedCapacity: "25"
+        LaunchTemplateSpecification:
+          LaunchTemplateId: !Ref LaunchTemplateCudaARM64
+          Version: !GetAtt LaunchTemplateCudaARM64.LatestVersionNumber
       - InstanceType: g5.xlarge
         WeightedCapacity: "56"
       - InstanceType: g5.24xlarge
